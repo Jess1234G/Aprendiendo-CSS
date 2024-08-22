@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(23, 20, 230);
+}
+
+.title{
+    font-size: 2.8em;
+    color: red;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+#principal{
+    font-size: 4,5em;
+}
+
+#Titulos{
+    border: 2px solid yellow;
+    /* viewport width */
+    width: 65vw;
+    text-align: center;
+    margin: auto;
+    padding: 3em;
+}
+
+.targeta {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0px 3px 3em 3px;
+    border-radius: 15px;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.targeta:hover{
+    background-color: green;
+}
+#contenedor-targetas{
+    background-color: aqua;
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 2px solid rgb(209, 21, 21);
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

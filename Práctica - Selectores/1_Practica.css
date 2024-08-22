@@ -1,0 +1,72 @@
+* {
+    color: rgb(17, 17, 17);
+  }
+
+
+  h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #mi-contenedor {
+    background-color: lightgray;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-weight: bold;
+  }
+
+  .Imagen1{
+    border: 1px solid gray;
+    width: 1250px;
+  }
+
+  [href="https://www.google.com"] {
+    color: green;
+  }
+
+  [href^="https://"] {
+    font-weight: bold;
+  }
+
+  [src$=".jpg"] {
+    width: 200px;
+  }
+
+  [href*="google.com"] {
+    color: red;
+  }
+  
+  [disabled="disabled"] {
+    border: 1px solid green;
+  }
+
+  [class~="error"] {
+    color: red;
+  }
+
+  div > p {
+    font-style: italic;
+  }
+  
+  .Mensaje {
+    text-decoration: underline;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  
+  #checkbox:checked {
+    background-color: green;
+  }
+
+  p::first-line {
+    font-weight: bold;
+  }
+  

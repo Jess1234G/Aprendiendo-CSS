@@ -1,0 +1,267 @@
+Ejemplos de Selectores CSS:
+
+1. 'Selector Universal (*)'
+
+HTML:
+
+<p>Hola mundo</p>
+<div>Este es un div</div>
+
+CSS:
+
+* {
+  color: blue;
+}
+
+Explicación: Cambia el color de texto de todos los elementos a azul.
+
+2. 'Selector de Tipo (p, h1, h2, h3, h4, h5, h6, div, etc.)'
+
+HTML:
+
+<h2>Título Principal</h2>
+<p>Este es un párrafo.</p>
+
+CSS:
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+Explicación: Define tamaño de fuente y centra el estilo para todos los elementos <h2>.
+
+3. 'Selector de ID (#id)'
+
+HTML:
+
+<div id="mi-contenedor">
+  <p>Contenido del contenedor.</p>
+</div>
+
+CSS:
+
+#mi-contenedor {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+
+Explicación: Define el estilo, establece un color y da un relleno de 20px para el elemento div con el ID mi-contenedor.
+
+4. 'Selector de Clase (.class)'
+
+HTML:
+
+<p class="titulo">Mi pagina Web</p>
+
+CSS:
+
+.titulo {
+  font-weight: bold;
+}
+
+Explicación: Define el estilo para todos los elementos con la clase titulo.
+
+5. 'Selector de Atributo ([attr])'
+
+HTML:
+
+img src="./imagen17.jpg" class="Imagen1">
+
+CSS:
+
+.Imagen1{
+   border: 1px solid gray;
+   width: 1250px;
+  }
+
+
+Explicación: Define el marco y el tamaño de la imagen.
+
+6. 'Selector de Atributo con Valor ([attr="value"])'
+
+HTML:
+
+<a href="https://www.google.com">Enlace a Google</a>
+
+CSS:
+
+[href="https://www.google.com"] {
+  color: green;
+}
+
+Explicación: Define el estilo para el elemento a con el atributo href que tiene el valor https://www.google.com.
+
+7. 'Selector de Atributo con Valor que Comienza con ([attr^="value"])'
+
+HTML:
+
+<a href="https://www.example.com">Enlace a Example</a>
+<a href="http://www.anothersite.com">Enlace a Otro Sitio</a>
+
+CSS:
+
+[href^="https://"] {
+  font-weight: bold;
+}
+
+Explicación: Define el estilo para los elementos a con el atributo href que comienza con https://.
+
+8. 'Selector de Atributo con Valor que Termina con ([attr$="value"])'
+
+HTML:
+
+<img src="imagen.jpg" alt="Descripción de la imagen">
+<img src="logo.png" alt="Logo del sitio">
+
+
+CSS:
+
+[src$=".jpg"] {
+  width: 200px;
+}
+
+Explicación: Define el estilo y el tamaño para las imágenes que terminan con .jpg.
+
+9. 'Selector de Atributo con Valor que Contiene ([attr*="value"])'
+
+HTML:
+
+<a href="https://www.google.com/search?q=css">Enlace de búsqueda</a>
+
+CSS:
+
+[href*="google.com"] {
+  color: red;
+}
+
+Explicación: Define el estilo para los enlaces que contienen google.com en su atributo href.
+
+10. 'Selector de Atributo con Valor que no Coincide ([attr!="value"])'
+
+HTML:
+
+<input type="text" disabled>
+<input type="password" required>
+
+CSS:
+
+[disabled!="disabled"] {
+  border: 1px solid green;
+}
+
+Explicación: Define el estilo para los elementos input que no están deshabilitados (disabled).
+
+11. 'Selector de Atributo con Valor que Coincide con una Expresión Regular ([attr~="value"])'
+
+HTML:
+
+<span class="error">Error en el formulario</span>
+<span class="warning">Cuidado con este paso</span>
+
+CSS:
+
+[class~="error"] {
+  color: red;
+}
+
+Explicación: Define el estilo para los elementos span que tienen la clase error entre otras clases.
+
+12. 'Selector de Hijo (parent > child)'
+
+HTML:
+
+<div>
+  <p>Este párrafo es hijo directo de div.</p>
+</div>
+
+CSS:
+
+div > p {
+  font-style: italic;
+}
+
+Explicación: Define el estilo para los elementos p que son hijos directos de un elemento div.
+
+13. 'Selector de Descendiente (parent child)'
+
+HTML:
+
+<div>
+  <p>Este párrafo es un descendiente de div.</p>
+</div>
+
+CSS:
+
+div p {
+  text-decoration: underline;
+}
+
+Explicación: Define el estilo para los elementos p que son descendientes de un elemento div.
+
+14. 'Selector de Hermano Adyacente (selector + sibling)'
+
+HTML:
+
+<p>Primer párrafo.</p>
+<p>Segundo párrafo.</p>
+
+CSS:
+
+p + p {
+  margin-top: 20px;
+}
+
+Explicación: Define el estilo para el segundo párrafo (p) que es el hermano adyacente del primer párrafo (p).
+
+15. 'Selector de Hermano General (selector ~ sibling)'
+
+HTML:
+
+<p>Primer párrafo.</p>
+<div>Un div</div>
+<p>Tercer párrafo.</p>
+
+CSS:
+
+p ~ p {
+  font-size: 1.2em;
+}
+
+Explicación: Define el estilo para los párrafos que son hermanos del primer párrafo (p).
+
+16. 'Selector de Pseudo-clase (selector:pseudo-class)'
+
+HTML:
+
+<a href="https://www.google.com">Enlace a Google</a>
+<input type="checkbox" id="checkbox">
+
+CSS:
+
+a:hover {
+  text-decoration: none;
+}
+
+#checkbox:checked {
+  background-color: green;
+}
+
+Explicación: Define el estilo para el enlace cuando se coloca el mouse sobre él (a:hover) y para la casilla de verificación cuando está marcada (#checkbox:checked).
+
+17. 'Selector de Pseudo-elemento (selector::pseudo-element)'
+
+HTML:
+
+<p>Este es un párrafo.</p>
+
+CSS:
+
+p::first-line {
+  font-weight: bold;
+}
+
+Explicación: Define el estilo para la primera línea del párrafo.
+
+Estos ejemplos te mostrarán cómo usar diferentes selectores CSS para estilos específicos en tu HTML. Recuerda que esta lista no es exhaustiva, y puedes encontrar más información sobre selectores CSS en la documentación oficial de CSS.

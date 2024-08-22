@@ -1,0 +1,21 @@
+PseudoClase
+
+Interacción: hover, :active, :focus, :focus-within, :focus-visible.
+
+Ubicacion: :any-link, :link, :visited, :target
+
+Idioma: :lang(), :dir()
+
+Estructura: :root, :host, :defined, :empty
+:first-child, :last-child, :only-child
+:first-of-type, :last-of-type, :only-of-type
+:nth-child(), :nth-last-child(), :nth-of-type(), :nth-last-of-type()
+
+Formulario: :checked, :indeterminate
+:enabled, :disabled, :read-only, :read-write, :placeholder-shown, :default
+:required, :optional, :valid, :invalid, :user-valid, :user-invalid
+:in-range, :out-of-range
+
+Estado: :fullscreen, :modal
+
+Paginado: :first, :left, :right, :blank
